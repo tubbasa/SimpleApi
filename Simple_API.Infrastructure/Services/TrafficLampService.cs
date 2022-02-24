@@ -29,8 +29,6 @@ namespace Simple_API.Infrastructure.Services
         
         public async Task<List<TrafficLights>> GetTrafficLight()
         {
-            throw new FileWriteError("Error happened when writing file.",500);
-
             var deviceResponse = await _trafficLampsRepository.GetAll();
             return deviceResponse.Select(tl => new TrafficLights(tl.Id,tl.DeviceName,tl.Url,tl.ReachabilityType)).ToList();
             
