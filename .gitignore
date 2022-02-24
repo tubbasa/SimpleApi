@@ -236,3 +236,21 @@ _Pvt_Extensions
 
 .idea/
 .DS_Store
+
+Simple_API.Api/bin/Debug/net5.0/
+
+Simple_API.Api/obj/Debug/net5.0/
+
+Simple_API.Api/obj/
+
+*.dll
+
+*.cache
+
+Simple_API.Domain/obj/Debug/net5.0/
+
+Simple_API.Domain/obj/
+
+Simple_API.Infrastructure/obj/Debug/net5.0/
+
+Simple_API.Infrastructure/obj/
