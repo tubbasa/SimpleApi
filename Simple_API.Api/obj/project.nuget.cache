@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "XAThAcWr/beFJYp1UgoNFuS0heUuA6XdK9sns3SxZjgs9EdirktTFyosqNv6IPNLXrPfYcFaVH9G7AV9LmRsZQ==",
+  "success": true,
+  "projectFilePath": "/Users/tuba.saday/Desktop/tubaEducation/SIMPLE_API/Simple_API.Api/Simple_API.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/tuba.saday/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/tuba.saday/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

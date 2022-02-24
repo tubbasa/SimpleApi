@@ -1,0 +1,12 @@
+/Users/tuba.saday/Desktop/tubaEducation/SIMPLE_API/Simple_API.Domain/bin/Debug/net5.0/Simple_API.Domain.deps.json
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/bin/Debug/net5.0/Simple_API.Domain.dll
+/Users/tuba.saday/Desktop/tubaEducation/SIMPLE_API/Simple_API.Domain/bin/Debug/net5.0/ref/Simple_API.Domain.dll
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/bin/Debug/net5.0/Simple_API.Domain.pdb
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.csproj.AssemblyReference.cache
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.AssemblyInfoInputs.cache
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.AssemblyInfo.cs
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.csproj.CoreCompileInputs.cache
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.dll
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/ref/Simple_API.Domain.dll
+/Users/tuba.saday/Desktop/tubaEducation/Simple_API/Simple_API.Domain/obj/Debug/net5.0/Simple_API.Domain.pdb

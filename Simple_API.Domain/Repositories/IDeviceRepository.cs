@@ -1,18 +1,19 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Simple_API.Domain.Enums;
 using Simple_API.Domain.SimpleAPIAggregate;
 
 namespace Simple_API.Domain.Respositories
 {
-    public interface IDeviceRepository
+    public interface IDeviceRepository<T>
     {
-        Task Add(IDevice device);
-        Task Update(IDevice device);
+        Task Add(T device);
+        Task Update(T device);
         Task Delete(Guid deviceId);
-        Task Get(Guid deviceId);
-        Task GetDevicesByType(ReachabilityTypes reachabilityType);
-        Task GetAll();
+        Task<T> Get(Guid deviceId);
+        Task<List<T>> GetDevicesByType(ReachabilityTypes reachabilityType);
+        Task<List<T>> GetAll();
 
 
     }

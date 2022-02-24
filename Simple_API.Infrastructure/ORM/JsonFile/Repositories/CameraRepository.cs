@@ -1,21 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Simple_API.Domain.Classes;
 using Simple_API.Domain.Enums;
 using Simple_API.Domain.Respositories;
 using Simple_API.Infrastructure.DTOs;
-using Camera = Simple_API.Domain.Classes.Camera;
 
 namespace Simple_API.Infrastructure.ORM.JsonFile.Repositories
 {
-    public class CameraRepository : ICameraRepository
+    public class CameraRepository : IDeviceRepository<AggregateCamera>
     {
-        public Task Add(Camera device)
+        public Task Add(AggregateCamera device)
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(Camera device)
+        public Task Update(AggregateCamera device)
         {
             throw new NotImplementedException();
         }
@@ -25,17 +25,17 @@ namespace Simple_API.Infrastructure.ORM.JsonFile.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Camera> Get(Guid deviceId)
+        public Task<AggregateCamera> Get(Guid deviceId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Camera>> GetDevicesByType(ReachabilityTypes reachabilityType)
+        public Task<List<AggregateCamera>> GetDevicesByType(ReachabilityTypes reachabilityType)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Camera>> GetAll()
+        public Task<List<AggregateCamera>> GetAll()
         {
             throw new NotImplementedException();
         }

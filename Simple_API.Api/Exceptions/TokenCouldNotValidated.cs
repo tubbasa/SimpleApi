@@ -1,8 +1,11 @@
+using System;
+using System.Globalization;
+
 namespace Simple_API.Api.Exceptions
 {
-    public class TokenCouldNotValidated : ApiException
+    public class TokenCouldNotValidated : TokenException
     {
-        public TokenCouldNotValidated(string code, string error) : base(code, error)
+        public TokenCouldNotValidated(string message, int code) : base(message, code)
         {
         }
     }

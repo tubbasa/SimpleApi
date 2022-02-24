@@ -4,10 +4,11 @@ namespace Simple_API.Infrastructure.Exceptions
 {
     public class FileExceptions : Exception
     {
-        public virtual string Code { get; }
+        public int Code { get; }
 
-        public FileExceptions(string message) : base(message)
+        public FileExceptions(string message, int code) : base(message)
         {
+            Code = code;
         }
     }
 }
