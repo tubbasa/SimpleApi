@@ -36,19 +36,14 @@ namespace Simple_API.Api.Middleware
                     default:
                         response = new ApiResponse(ex.Message, StatusCodes.Status500InternalServerError);
                         break;
-                        
                 }
-                
-                if (!httpContext.Response.HasStarted)
-                {
-                    httpContext.Response.ContentType = "application/json";
-                    httpContext.Response.StatusCode = response.StatusCode;
-                    var json = JsonConvert.SerializeObject(response);
-                    await httpContext.Response.WriteAsync(json);
-                }
-            }
 
-          
+
+                httpContext.Response.ContentType = "application/json";
+                httpContext.Response.StatusCode = response.StatusCode;
+                var json = JsonConvert.SerializeObject(response);
+                await httpContext.Response.WriteAsync(json);
+            }
         }
     }
 }
