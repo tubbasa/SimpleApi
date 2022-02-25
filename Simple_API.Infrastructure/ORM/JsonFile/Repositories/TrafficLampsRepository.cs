@@ -30,9 +30,6 @@ namespace Simple_API.Infrastructure.ORM.JsonFile.Repositories
             {
                 throw new FileWriteError("Error happened when writing file.",500);
             }
-           
-
-          
         }
 
         public async Task Update(TrafficLights device)
@@ -47,7 +44,16 @@ namespace Simple_API.Infrastructure.ORM.JsonFile.Repositories
 
         public async Task<TrafficLights> Get(Guid deviceId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var lines = File.ReadAllText(trafficJsonPath);
+                var trafficLightsList = JsonConvert.DeserializeObject<List<TrafficLights>>(lines);
+                return trafficLightsList?.FirstOrDefault(tl=> tl.Id == deviceId);
+            }
+            catch (Exception e)
+            {
+                throw new FileReadException("There was an error while reading file",500);
+            }        
         }
 
         public async Task<List<TrafficLights>> GetDevicesByType(ReachabilityTypes reachabilityType)
@@ -68,7 +74,6 @@ namespace Simple_API.Infrastructure.ORM.JsonFile.Repositories
                 Console.WriteLine(e);
                 throw;
             }
-          
         }
     }
 }

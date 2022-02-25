@@ -30,7 +30,7 @@ namespace Simple_API.Infrastructure.Services
         public async Task<List<TrafficLights>> GetTrafficLight()
         {
             var deviceResponse = await _trafficLampsRepository.GetAll();
-            return deviceResponse.Select(tl => new TrafficLights(tl.Id,tl.DeviceName,tl.Url,tl.ReachabilityType)).ToList();
+            return deviceResponse.Select(tl => new TrafficLights(tl.DeviceName,tl.Url,tl.ReachabilityType)).ToList();
             
         }
         
@@ -38,8 +38,14 @@ namespace Simple_API.Infrastructure.Services
         {
             await _trafficLampsRepository.Add(trafficLight);
             return true;
-            
         }
+
+        public async Task<object> GetDataFromTrafficLight(Guid guid)
+        {
+           var lamp =  await _trafficLampsRepository.Get(guid);
+           return lamp?.ReadData();
+        }
+            
     }
 
 }

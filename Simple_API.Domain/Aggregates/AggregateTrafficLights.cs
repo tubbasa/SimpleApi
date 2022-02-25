@@ -7,20 +7,21 @@ namespace Simple_API.Domain.Classes
 {
     public abstract class AggregateTrafficLights : IDevice, ILight, IReachableWithIp
     {
-        public Guid Id { get; }
+        public Guid Id { get; set; }
         public string DeviceName { get; set; }
-        public string Url { get; }
+        public string Url { get; set; }
         public ReachabilityTypes ReachabilityType { get; set; }
 
         public  abstract Task<object> ReadData();
 
-        protected AggregateTrafficLights(Guid id, string deviceName, string url, ReachabilityTypes reachabilityType)
-        {
-            Id = id;
-            DeviceName = deviceName;
-            Url = url;
-            ReachabilityType = reachabilityType;
-        }
+       // protected AggregateTrafficLights(string id, string deviceName, string url, ReachabilityTypes reachabilityType)
+        //{
+         //   Id = id;
+          //  DeviceName = deviceName;
+          //  Url = url;
+          //  ReachabilityType = reachabilityType;
+        //}
+        
         protected AggregateTrafficLights(string deviceName, string url, ReachabilityTypes reachabilityType)
         {
             DeviceName = deviceName;
